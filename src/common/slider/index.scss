@@ -1,0 +1,53 @@
+@import '../../styles//vars.scss';
+
+.intensity-slider {
+    display: flex;
+    position: relative;
+
+    .ticks {
+        position: absolute;
+
+        .tick {
+            position: absolute;
+            background: #c7c7c7;
+            width: 3px;
+            transition: box-shadow 0.8s;
+        }
+
+        .tick.active {
+            width: 3px;
+            background-image: linear-gradient($primaryColor, $secondaryColor);
+        }
+    }
+
+    background-image: none;
+
+    .outer {
+        border-radius: 50%;
+    }
+
+    .inner {
+        border-radius: 50%;
+        background-color: #fff;
+        border: none;
+
+        .handle {
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            background-image: linear-gradient($primaryColor, $secondaryColor);
+            cursor: pointer;
+
+        }
+    }
+
+    .range-value {
+        position: absolute;
+        font-size: 40px;
+        font-weight: bold;
+    }
+}

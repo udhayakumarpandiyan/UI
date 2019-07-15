@@ -1,0 +1,244 @@
+{
+    "devices": [
+        {
+            "name": "Thermostat",
+            "usage": "Dining room",
+            "image": "thermostat.png",
+            "shades": [
+                {
+                    "color": "#FF4563",
+                    "checked": true
+                },
+                {
+                    "color": "#1089EB",
+                    "checked": false
+                },
+                {
+                    "color": "#C791CD",
+                    "checked": false
+                },
+                {
+                    "color": "#8245E6",
+                    "checked": false
+                },
+                {
+                    "color": "#4AC0E0",
+                    "checked": false
+                }
+            ],
+            "modes": [
+                {
+                    "mode": "Morning",
+                    "percentage": "50",
+                    "checked": true,
+                    "icon": "morning-wh.png"
+                },
+                {
+                    "mode": "Day",
+                    "percentage": "50",
+                    "checked": true,
+                    "icon": "day-dk.png"
+                },
+                {
+                    "mode": "Night",
+                    "percentage": "50",
+                    "checked": true,
+                    "icon": "night-dk.png"
+                }
+            ],
+            "intensity": 64
+        },
+        {
+            "name": "Bed Lamp",
+            "usage": "Bedroom",
+            "image": "lamp.png",
+            "shades": [
+                {
+                    "color": "#FF4563",
+                    "checked": true
+                },
+                {
+                    "color": "#8245E6",
+                    "checked": false
+                },
+                {
+                    "color": "#4AC0E0",
+                    "checked": false
+                },
+                {
+                    "color": "#1089EB",
+                    "checked": false
+                },
+                {
+                    "color": "#C791CD",
+                    "checked": false
+                }
+            ],
+            "modes": [
+                {
+                    "mode": "Morning",
+                    "percentage": "50",
+                    "checked": true,
+                    "icon": "morning-wh.png"
+                },
+                {
+                    "mode": "Day",
+                    "percentage": "30",
+                    "checked": true,
+                    "icon": "day-dk.png"
+                },
+                {
+                    "mode": "Night",
+                    "percentage": "100",
+                    "checked": true,
+                    "icon": "night-dk.png"
+                }
+            ],
+            "intensity": 64
+        },
+        {
+            "name": "Noria AC",
+            "usage": "Bedroom",
+            "image": "ac.png",
+            "shades": [
+                {
+                    "color": "#8245E6",
+                    "checked": false
+                },
+                {
+                    "color": "#4AC0E0",
+                    "checked": false
+                },
+                {
+                    "color": "#FF4563",
+                    "checked": true
+                },
+                {
+                    "color": "#1089EB",
+                    "checked": false
+                },
+                {
+                    "color": "#C791CD",
+                    "checked": false
+                }
+            ],
+            "modes": [
+                {
+                    "mode": "Day",
+                    "percentage": "30",
+                    "checked": true,
+                    "icon": "morning-wh.png"
+                },
+                {
+                    "mode": "Morning",
+                    "percentage": "100",
+                    "checked": true,
+                    "icon": "day-dk.png"
+                },
+                {
+                    "mode": "Night",
+                    "percentage": "20",
+                    "checked": true,
+                    "icon": "night-dk.png"
+                }
+            ],
+            "intensity": 82
+        },
+        {
+            "name": "Door Lock",
+            "usage": "Dining room",
+            "image": "lock.png",
+            "shades": [
+                {
+                    "color": "#4AC0E0",
+                    "checked": false
+                },
+                {
+                    "color": "#FF4563",
+                    "checked": true
+                },
+                {
+                    "color": "#8245E6",
+                    "checked": false
+                },
+                {
+                    "color": "#1089EB",
+                    "checked": false
+                },
+                {
+                    "color": "#C791CD",
+                    "checked": false
+                }
+            ],
+            "modes": [
+                {
+                    "mode": "Morning",
+                    "percentage": "70",
+                    "checked": true,
+                    "icon": "morning-wh.png"
+                },
+                {
+                    "mode": "Day",
+                    "percentage": "30",
+                    "checked": true,
+                    "icon": "day-dk.png"
+                },
+                {
+                    "mode": "Night",
+                    "percentage": "50",
+                    "checked": true,
+                    "icon": "night-dk.png"
+                }
+            ],
+            "intensity": 68
+        },
+        {
+            "name": "LG Tv",
+            "usage": "Living room",
+            "image": "tv.png",
+            "shades": [
+                {
+                    "color": "#FF4563",
+                    "checked": true
+                },
+                {
+                    "color": "#4AC0E0",
+                    "checked": false
+                },
+                {
+                    "color": "#1089EB",
+                    "checked": false
+                },
+                {
+                    "color": "#8245E6",
+                    "checked": false
+                },
+                {
+                    "color": "#C791CD",
+                    "checked": false
+                }
+            ],
+            "modes": [
+                {
+                    "mode": "Morning",
+                    "percentage": "50",
+                    "checked": true,
+                    "icon": "morning-wh.png"
+                },
+                {
+                    "mode": "Day",
+                    "percentage": "100",
+                    "checked": true,
+                    "icon": "day-dk.png"
+                },
+                {
+                    "mode": "Night",
+                    "percentage": "50",
+                    "checked": true,
+                    "icon": "night-dk.png"
+                }
+            ],
+            "intensity": 70
+        }
+    ]
+}

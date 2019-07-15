@@ -1,0 +1,25 @@
+@import './vars.scss';
+
+@mixin media-mobile {
+    @media (max-width: ($mediaquery-mobile)) {
+        @content;
+    }
+}
+
+@mixin media-tab {
+    @media screen and (min-width: $mediaquery-mobile) and (max-width: ($mediaquery-tab)) {
+        @content;
+    }
+}
+
+@mixin media-desktop-sm {
+    @media screen and (min-width: $mediaquery-tab) and (max-width: ($mediaquery-desktop-sm)) {
+        @content;
+    }
+}
+
+@mixin media-desktop-lg {
+    @media screen and (min-width: $mediaquery-desktop-sm) and (max-width: ($mediaquery-desktop-lg)) {
+        @content;
+    }
+}

@@ -1,0 +1,239 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/mixins.scss';
+
+/* common styles */
+.sidebar {
+    min-height: calc(100vh);
+    padding-top: 50.5px;
+    background-image: linear-gradient($primaryColor, $secondaryColor);
+    @extend .image-transition;
+}
+
+.image-transition {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/* Side bar elements styles*/
+
+.back-arrow {
+    position: absolute;
+    top: 33px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    content: url("../../../assets/icons/back-wh.png");
+    cursor: pointer;
+    z-index: 100;
+}
+
+.back-arrow:hover {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.back-arrow-collapsed {
+    @extend .back-arrow;
+    transform: rotate(180deg);
+}
+
+/*Styles for */
+.sidebar-container {
+    @extend .sidebar;
+    min-width: calc(100vw /100*25);
+
+    @include media-mobile {
+        min-width: calc(100vw /100*32);
+    }
+
+    @include media-tab {
+        min-width: calc(100vw /100*30);
+    }
+
+
+    .device {
+        width: 100%;
+        height: 120px;
+        margin: 60px 30px;
+
+        @include media-mobile {
+            margin: 40px 20px;
+        }
+
+        position: relative;
+        cursor: pointer;
+
+        .device-image {
+            height: 120px;
+            width: 120px;
+
+            @include media-mobile {
+                height: 100px;
+                width: 100px;
+            }
+
+            background-clip: content-box;
+            background-size: contain;
+            position: absolute;
+            top: 0px;
+            z-index: 100;
+            @extend .image-transition;
+        }
+
+        .device-image-selected {
+            @extend .device-image;
+            height: 140px;
+            width: 140px;
+
+            @include media-mobile {
+                height: 120px;
+                width: 120px;
+
+            }
+
+            right: 16px;
+            overflow: auto;
+        }
+
+        .device-info {
+            height: 120px;
+            width: 60%;
+            right: 60px;
+            top: 20px;
+
+            @include media-mobile {
+                height: 100px;
+                left: 16px;
+                top: 22px;
+                justify-content: flex-end;
+                padding-bottom: 10px;
+            }
+
+            @include media-tab {
+                height: 120px;
+                width: 120px;
+                left: 16px;
+                top: 22px;
+                justify-content: flex-end;
+                padding-bottom: 10px;
+            }
+
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 21px 21px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        .device-info-selected {
+            @extend .device-info;
+            width: 60%;
+            height: 140px;
+            left: 30px;
+            top: 16px;
+
+            @include media-mobile {
+                display: none;
+            }
+
+            @include media-tab {
+                display: none;
+            }
+        }
+
+        .device-name {
+            font-family: $fontBold;
+            text-transform: uppercase;
+            font-size: 16px;
+
+            @include media-mobile {
+                font-size: 10px;
+            }
+
+            @include media-tab {
+                font-size: 10px;
+            }
+        }
+
+        .device-usage {
+            @include media-mobile {
+                display: none;
+            }
+
+            @include media-tab {
+                display: none;
+            }
+
+            font-family: "Montserrat-Regular";
+            font-size: 15px;
+        }
+
+        .pointer {
+            position: absolute;
+            bottom: -40px;
+            right: 0px;
+
+            @include media-mobile {
+                bottom: -16px;
+            }
+
+            @include media-tab {
+                bottom: -30px;
+            }
+
+            max-width: 40px;
+            max-height: 40px;
+            padding: 6px;
+            content: url("../../../assets//icons/chevron-right.png");
+            background-image: linear-gradient(#DEFFC9, #A3F8FF);
+            z-index: 101;
+        }
+    }
+
+}
+
+.sidebar-container-collapsed {
+    @extend .sidebar;
+    width: 92px;
+    min-width: 78px;
+
+    .device-collapsed {
+        @extend .device;
+        height: 80px;
+        margin: 20px 8px;
+
+        .device-image-collapsed {
+            @extend .device-image;
+            height: 60px;
+            width: 60px;
+            @extend .image-transition;
+        }
+
+        .device-image-selected-collpased {
+            @extend .device-image;
+            height: 72px;
+            width: 72px;
+            right: 3px;
+            overflow: auto;
+            @extend .image-transition;
+        }
+
+        .device-info-collapsed {
+            @extend .device-info;
+            height: 80px;
+            width: 80%;
+            left: 0px;
+            bottom: -1px;
+            padding-bottom: 6px;
+            justify-content: flex-end;
+        }
+
+        .pointer-collapsed {
+            bottom: -2px;
+            right: -18px;
+        }
+    }
+}
